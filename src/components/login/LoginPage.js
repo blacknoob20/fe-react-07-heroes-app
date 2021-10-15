@@ -6,6 +6,7 @@ export const LoginPage = ({ history }) => {
     const { dispatch } = useContext(AuthContext);
 
     const handleLogin = () => {
+        const lastPath = localStorage.getItem('lastPath') || '/';
         // Para saber el comportamiento descomente de click en el boton y luego
         // en el boton del browser back para notar la diferencia
         // history.push('/');
@@ -16,7 +17,7 @@ export const LoginPage = ({ history }) => {
             },
         });
 
-        history.replace('/');
+        history.replace(lastPath);
     }
 
     return (
