@@ -1,6 +1,6 @@
 import { mount, shallow } from 'enzyme';
 import { MemoryRouter } from 'react-router-dom';
-import { PrivateRoute } from '../../../routers/PrivateRoute';
+import { PrivateRoute } from '../../routers/PrivateRoute';
 
 describe('Pruebas en <PrivateRoute/>', () => {
     const props = { location: { pathname: '/marvel' } };

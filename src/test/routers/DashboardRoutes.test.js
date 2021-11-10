@@ -1,7 +1,7 @@
 import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router-dom';
-import { AuthContext } from '../../../auth/AuthContext';
-import { DashboardRoutes } from '../../../routers/DashboardRoutes';
+import { AuthContext } from '../../auth/AuthContext';
+import { DashboardRoutes } from '../../routers/DashboardRoutes';
 
 describe('Pruebas en <DashboardRoutes />', () => {
     const contextValue = {

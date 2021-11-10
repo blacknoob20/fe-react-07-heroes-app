@@ -1,8 +1,8 @@
 import { mount } from 'enzyme';
 import { MemoryRouter, Router } from 'react-router-dom';
-import { AuthContext } from '../../auth/AuthContext';
-import { Navbar } from '../../components/ui/NavBar';
-import { types } from '../../types/types';
+import { AuthContext } from '../../../auth/AuthContext';
+import { Navbar } from '../../../components/ui/NavBar';
+import { types } from '../../../types/types';
 
 describe('Pruebas en <Navbar />', () => {
     const historyMock = {
