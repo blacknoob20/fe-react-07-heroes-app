@@ -34,9 +34,15 @@ export const SearchPage = ({ history }) => {
                     <h4>Results</h4>
                     <hr />
                     {
-                        heroesFiltered.map(hero => (
-                            <HeroCard key={hero.id} {...hero} />
-                        ))
+                        (
+                            q != '' && heroesFiltered.length > 0
+                                ?
+                                heroesFiltered.map(hero => (
+                                    <HeroCard key={hero.id} {...hero} />
+                                ))
+                                :
+                                <p>No hay resultados</p>
+                        )
                     }
                 </div>
             </div>
